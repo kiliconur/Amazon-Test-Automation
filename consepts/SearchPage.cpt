@@ -1,0 +1,10 @@
+# <text> filtresiyle arama sonucu sıralandılır ve ilk <count> sonuç <fileName> dosyasina kaydedilir
+* "Sıralama Filtresi" select listesinden <text> text secimi yapilir
+* "3" saniye bekle
+* "Listelenen Ürünlerin Texti" elementlerinden ilk "10" tanesini listeye kaydet
+* listedeki elemanlari <fileName> dosyasina yazdir ve listeyi temizle
+# <text> filtresiyle arama sonucu sıralandılır ve sayısal yorum puanı en yüksek değerlerden ucuz olanı sepete eklenir
+* "Sıralama Filtresi" select listesinden <text> text secimi yapilir
+* "3" saniye bekle
+* "Listelenen Ürünler" elementlerinin "Listelenen Ürünlerin Puanı" puan elementlerinden en yükseklerinin "Listelenen Ürünlerin Fiyatları" fiyat elementlerinin en ucuzuna tikla
+* "Sepete Ekle Butonu" elementine tikla

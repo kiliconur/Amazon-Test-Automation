@@ -1,0 +1,8 @@
+# <item> aratılır fiyatı <min> TL ile <max> TL arasında olan kulaklıklar filtrelenir
+* "Arama Alanı" alanina <item> yaz
+* "Arama Alanı Ara Butonu" elementine tikla
+* "Çerezleri Kabul Et" elementine tikla
+* "Kulaklık Kategorisi Filtresi" elementine tikla
+* "Min Tutar Filtresi" alanina <min> yaz
+* "Max Tutar Filtresi" alanina <max> yaz
+* "Tutar Filtresi Git Butonu" elementine tikla
