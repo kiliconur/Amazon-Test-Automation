@@ -55,7 +55,12 @@ public class SearchPage extends BasePage {
         int minPrice;
         int currentPrice;
         for (int i = 0; i < highestRankElementIndexes.size(); i++) {
-            minPrice = convertStringToNumber(priceList.get(minPriceIndex).getText());
+            if (priceList.get(minPriceIndex).getText().equals("")) {
+                minPrice = convertStringToNumber(priceList.get(minPriceIndex).findElement(By.xpath("//span[@class='a-price-whole']")).getText()+priceList.get(highestRankElementIndexes.get(i)).findElement(By.xpath("//span[@class='a-price-fraction']")).getText());
+            }
+            else {
+                minPrice = convertStringToNumber(priceList.get(minPriceIndex).getText());
+            }
             if (priceList.get(highestRankElementIndexes.get(i)).getText().equals("")) {
                 currentPrice = convertStringToNumber(priceList.get(highestRankElementIndexes.get(i)).findElement(By.xpath("//span[@class='a-price-whole']")).getText()+priceList.get(highestRankElementIndexes.get(i)).findElement(By.xpath("//span[@class='a-price-fraction']")).getText());
             }
